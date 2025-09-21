@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+  text-align: center;
+}
+header {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  padding: 20px;
+  color: white;
+}
+
+/* Part 1: CSS Animations */
+.animated-btn {
+  background: #4facfe;
+  color: white;
+  padding: 12px 20px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn:hover {
+  background: #00f2fe;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); background: coral; }
+  50% { transform: scale(1.2); background: gold; }
+  100% { transform: scale(1); background: coral; }
+}
+
+/* Part 3: JS + CSS Box */
+.js-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: teal;
+  transition: transform 0.6s ease, background 0.6s ease;
+}
+.js-box.animate {
+  transform: rotate(360deg) scale(1.2);
+  background: limegreen;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  animation: slideFade 0.5s ease;
+}
+@keyframes slideFade {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 7 - CSS Animations & JavaScript Functions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Interactive Web Experience ✨</h1>
+    <p>CSS3 Animations + Advanced JavaScript Functions</p>
+  </header>
+
+  <!-- Part 1: CSS Animations -->
+  <section class="animations">
+    <h2>🎨 Part 1: CSS Transitions & Animations</h2>
+    <button class="animated-btn">Hover Me!</button>
+    <div class="box">CSS Box</div>
+  </section>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section class="functions">
+    <h2>📚 Part 2: JavaScript Functions (Scope, Parameters & Returns)</h2>
+    <p id="sumResult">Click button to calculate sum!</p>
+    <button onclick="showSum(5, 7)">Calculate Sum</button>
+  </section>
+
+  <!-- Part 3: Combining CSS + JS -->
+  <section class="combo">
+    <h2>🎬 Part 3: CSS + JS Magic</h2>
+    <button id="animateBtn">Animate the Box</button>
+    <div class="js-box" id="jsBox"></div>
+
+    <button id="modalBtn">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h3>Modal Animation</h3>
+        <p>This modal slides and fades in with CSS, triggered by JavaScript!</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
